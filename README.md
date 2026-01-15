@@ -41,7 +41,7 @@ The repo is lean by design to keep you focused on the tracking:
 2. **Deploy:** Link your Adobe Tag (Launch) property.
 3. **Validate:** Open the **AEP Debugger** and watch the XDM events fire in real-time.
 
-**Ready to see it live?** [Check out the Demo here!](https://www.google.com/search?q=URL_HERE)
+**Ready to see it live?** [**Live Demo**](https://johnparente97.github.io/aep-web-tracking-lab/site/)
 
 ---
 
