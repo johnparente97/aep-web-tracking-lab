@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Bank - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /* Fix for width override */
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo" data-track="nav|home">Global Bank</a>
+            <ul class="nav-links">
+                <li><a href="index.html" data-track="nav|home">Home</a></li>
+                <li><a href="credit-card.html" data-track="nav|credit-cards">Credit Cards</a></li>
+                <li><a href="loan.html" data-track="nav|loans">Loans</a></li>
+                <li><a href="signup.html" data-track="nav|signup">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="form-container">
+            <h1>Create Your Account</h1>
+            <p>Join Global Bank today and take control of your finances.</p>
+            <br>
+            <form id="signup-form" data-track="form|signup|submission">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="accountType">Account Type</label>
+                    <select id="accountType" name="accountType">
+                        <option value="checking">Checking Account</option>
+                        <option value="savings">Savings Account</option>
+                        <option value="investment">Investment Account</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-large" style="width: 100%;"
+                    data-track="form|signup|submit-button">Create Account</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Global Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="../data-layer/digitalData.js"></script>
+    <script>
+        // Simple form handling (just preventing default for demo)
+        document.getElementById('signup-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for signing up! (This is a demo)');
+            // In a real implementation, analytics tracking call would go here
+        });
+    </script>
+</body>
+
+</html>
