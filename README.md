@@ -2,6 +2,10 @@
 
 A practice environment for Adobe Experience Platform (AEP) web tracking concepts.
 
+## Live Demo
+Access the live application here: [**Live Demo**](https://johnparentejr.github.io/aep-web-tracking-lab/site/)
+*(Note: Link works after enabling GitHub Pages)*
+
 ## Project Structure
 - `/site`: The static website pages.
 - `/data-layer`: Analytics data layer scripts.
